@@ -3,6 +3,6 @@
 
 		reference.forEach(key => {
 			if(targetParams.includes(key) === false)
-				throw err('missing parameter: '+key)
+				throw Error('missing parameter: '+key)
 		})
 	}
