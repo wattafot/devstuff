@@ -1,7 +1,7 @@
-	function checkValidParams(target, referene) {
+	function checkValidParams(target, reference) {
 		
 		Object.keys(target).forEach(key => {
-			if(referene.includes(key) === false)
-				throw err('invalid paramter: '+key)
+			if(reference.includes(key) === false)
+				throw Error('invalid paramter: '+key)
 		})
 	}
